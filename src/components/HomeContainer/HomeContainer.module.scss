@@ -1,0 +1,65 @@
+.wrapper {
+  min-height: 95vh;
+  position: relative;
+  background-image: url("../../../public/image1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button-group {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: var(--primary);
+  width: 400px;
+  height: 300px;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+}
+
+.create,
+.view {
+  width: 250px;
+  height: 50px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  border-style: none;
+  outline-color: var(--hover);
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  color: var(--primary);
+  background-color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+
+  &:hover {
+    background-color: var(--hover);
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.icon {
+  margin-right: 16px;
+}
+
+@media (max-width: 1025px) {
+  /* Styles for screens up to 1025px wide */
+}
+
+@media (max-width: 821px) {
+  /* Styles for screens up to 821px wide */
+  .button-group {
+    width: 90%;
+  }
+}
